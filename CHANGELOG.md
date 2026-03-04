@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 - Initial release of cc-pollen
 - Pollen info display for Claude Code status line
 - Support for ~1,000 observation points across Japan via Weathernews API
-- 21 city presets (Tokyo, Osaka, Nagoya, Fukuoka, Sapporo, etc.)
+- 21 city presets (Tokyo wards, Osaka, Nagoya, Fukuoka, Sapporo, etc.)
 - Interactive setup command (`cc-pollen setup`)
 - Multiple display formats (`icon+level+city`, `icon+bar`, etc.)
 - Detailed hourly chart view (`cc-pollen detail`)
