@@ -14,7 +14,7 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/oskmr/cc-pollen.git"
+    "url": "git+https://github.com/oskmr/cc-pollen.git"
   },
   "bugs": {
     "url": "https://github.com/oskmr/cc-pollen/issues"
@@ -22,7 +22,7 @@
   "homepage": "https://github.com/oskmr/cc-pollen#readme",
   "type": "module",
   "bin": {
-    "cc-pollen": "./dist/cli.js"
+    "cc-pollen": "dist/cli.js"
   },
   "scripts": {
     "build": "tsc -p .",
