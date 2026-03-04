@@ -1,0 +1,42 @@
+{
+  "name": "cc-pollen",
+  "version": "1.0.0",
+  "description": "Pollen info for Claude Code status line. Weathernews Pollnrobo open data, no API key required.",
+  "keywords": [
+    "claude-code",
+    "statusline",
+    "pollen",
+    "kafun",
+    "weathernews",
+    "cli"
+  ],
+  "author": "cc-pollen contributors",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/cc-pollen.git"
+  },
+  "bugs": {
+    "url": "https://github.com/YOUR_USERNAME/cc-pollen/issues"
+  },
+  "homepage": "https://github.com/YOUR_USERNAME/cc-pollen#readme",
+  "type": "module",
+  "bin": {
+    "cc-pollen": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc -p .",
+    "postbuild": "node ./scripts/add-shebang.mjs",
+    "prepare": "npm run build"
+  },
+  "files": [
+    "dist"
+  ],
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

@@ -1,0 +1,26 @@
+# Source files (dist/ is included)
+src/
+tsconfig.json
+
+# Development files
+.github/
+scripts/add-shebang.mjs
+*.log
+*.swp
+.DS_Store
+
+# Documentation (keep README.md, LICENSE, CHANGELOG.md)
+CONTRIBUTING.md
+CODE_OF_CONDUCT.md
+
+# Build artifacts
+*.tsbuildinfo
+.cache/
+
+# IDE
+.vscode/
+.idea/
+
+# Testing
+coverage/
+.nyc_output/
