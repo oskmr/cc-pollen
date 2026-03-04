@@ -23,7 +23,7 @@ const DEFAULTS: Config = {
   cityPreset: "shinjuku",
   citycode: "13104",
   cityName: "新宿区",
-  lang: "ja",
+  lang: "en",
   format: "icon+level+city",
   cacheTtl: DEFAULT_TTL,
   color: true,

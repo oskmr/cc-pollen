@@ -11,12 +11,12 @@ export interface LevelInfo {
 }
 
 export const LEVELS = [
-  { ja: "なし",       en: "None",      icon: "🟢", bar: "░░░░░" },
-  { ja: "少ない",     en: "Low",       icon: "🟡", bar: "▓░░░░" },
-  { ja: "やや多い",   en: "Moderate",  icon: "🟠", bar: "▓▓░░░" },
-  { ja: "多い",       en: "High",      icon: "🔴", bar: "▓▓▓░░" },
-  { ja: "非常に多い", en: "Very High", icon: "🟣", bar: "▓▓▓▓░" },
-  { ja: "極めて多い", en: "Extreme",   icon: "💀", bar: "▓▓▓▓▓" },
+  { ja: "なし",       en: "↓ None",      icon: "🟢", bar: "░░░░░" },
+  { ja: "少ない",     en: "→ Low",       icon: "🟡", bar: "▓░░░░" },
+  { ja: "やや多い",   en: "↗ Moderate",  icon: "🟠", bar: "▓▓░░░" },
+  { ja: "多い",       en: "↑ High",      icon: "🔴", bar: "▓▓▓░░" },
+  { ja: "非常に多い", en: "⇈ Very High", icon: "🟣", bar: "▓▓▓▓░" },
+  { ja: "極めて多い", en: "⇑ Extreme",   icon: "💀", bar: "▓▓▓▓▓" },
 ] as const satisfies readonly LevelInfo[];
 
 export const COLORS = [

@@ -9,7 +9,7 @@ Pollen info for Claude Code status line.
 Powered by [Weathernews Pollnrobo Open Data](https://wxtech.weathernews.com/pollen/index.html) — **no API key required**.
 
 ```
-🌸 🟠 やや多い 新宿区
+🌸 🟠 ↗ Moderate 新宿区
 ```
 
 ## Install
@@ -58,21 +58,21 @@ Combine tokens with `+`:
 
 | Format | Example |
 |--------|---------|
-| `icon+level+city` | 🟠 やや多い 新宿区 |
-| `icon+level+city+bar` | 🟠 やや多い 新宿区 ▓▓░░░ |
-| `icon+level+count` | 🟠 やや多い 30/cm² |
+| `icon+level+city` | 🟠 ↗ Moderate 新宿区 |
+| `icon+level+city+bar` | 🟠 ↗ Moderate 新宿区 ▓▓░░░ |
+| `icon+level+count` | 🟠 ↗ Moderate 30/cm² |
 | `icon+bar` | 🟠 ▓▓░░░ |
 
 ## Pollen Levels
 
-| Lv | Icon | Label | Count/cm² |
-|----|------|-------|-----------|
-| 0 | 🟢 | なし / None | 0 |
-| 1 | 🟡 | 少ない / Low | 1–9 |
-| 2 | 🟠 | やや多い / Moderate | 10–29 |
-| 3 | 🔴 | 多い / High | 30–49 |
-| 4 | 🟣 | 非常に多い / Very High | 50–99 |
-| 5 | 💀 | 極めて多い / Extreme | 100+ |
+| Lv | Icon | Label (EN) | Label (JA) | Count/cm² |
+|----|------|------------|------------|-----------|
+| 0 | 🟢 | ↓ None | なし | 0 |
+| 1 | 🟡 | → Low | 少ない | 1–9 |
+| 2 | 🟠 | ↗ Moderate | やや多い | 10–29 |
+| 3 | 🔴 | ↑ High | 多い | 30–49 |
+| 4 | 🟣 | ⇈ Very High | 非常に多い | 50–99 |
+| 5 | 💀 | ⇑ Extreme | 極めて多い | 100+ |
 
 ## City Presets
 

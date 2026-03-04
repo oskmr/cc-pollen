@@ -1,7 +1,7 @@
 {
   "name": "cc-pollen",
-  "version": "1.0.0",
-  "description": "Pollen info for Claude Code status line. Weathernews Pollnrobo open data, no API key required.",
+  "version": "1.0.1",
+  "description": "🌸 Joke tool: Pollen info for Claude Code status line. Weathernews Pollnrobo open data, no API key required.",
   "keywords": [
     "claude-code",
     "statusline",
