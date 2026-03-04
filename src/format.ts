@@ -15,6 +15,13 @@ export function formatStatusLine(data: PollenData, config: Config): string {
     if (t === "city") return config.cityName || "";
     if (t === "bar") return info.bar;
     if (t === "count" && data.latestPollen >= 0) return `${data.latestPollen}/cm²`;
+    if (t === "time" && data.latestTime) {
+      try {
+        return new Date(data.latestTime).toTimeString().slice(0, 5);
+      } catch {
+        return data.latestTime;
+      }
+    }
     return undefined;
   };
 

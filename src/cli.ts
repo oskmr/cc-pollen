@@ -89,15 +89,17 @@ async function cmdSetup(config: Config): Promise<void> {
 
   console.log("\nDisplay format:");
   console.log("  1. icon+level+city       (default)");
-  console.log("  2. icon+level+city+bar");
-  console.log("  3. icon+level+count");
-  console.log("  4. icon+bar");
+  console.log("  2. time+icon+level+city");
+  console.log("  3. icon+level+city+bar");
+  console.log("  4. icon+level+count");
+  console.log("  5. icon+bar");
   const fc = (await ask("Number [1]: ")) || "1";
   const formatOptions = {
     "1": "icon+level+city",
-    "2": "icon+level+city+bar",
-    "3": "icon+level+count",
-    "4": "icon+bar",
+    "2": "time+icon+level+city",
+    "3": "icon+level+city+bar",
+    "4": "icon+level+count",
+    "5": "icon+bar",
   } as const;
   config.format = formatOptions[fc as keyof typeof formatOptions] ?? "icon+level+city";
 
@@ -136,7 +138,7 @@ Commands:
 
 Options:
   --city <name|code>      Set city (preset name or 5-digit code)
-  --format <fmt>          icon+level+city, icon+bar, etc.
+  --format <fmt>          time+icon+level+city, icon+bar, etc.
   --lang <ja|en>          Language
   --no-color              Disable ANSI colors
 `);
