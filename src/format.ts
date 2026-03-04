@@ -17,7 +17,11 @@ export function formatStatusLine(data: PollenData, config: Config): string {
     if (t === "count" && data.latestPollen >= 0) return `${data.latestPollen}/cm²`;
     if (t === "time" && data.latestTime) {
       try {
-        return new Date(data.latestTime).toTimeString().slice(0, 5);
+        const date = new Date(data.latestTime);
+        const month = String(date.getMonth() + 1).padStart(2, "0");
+        const day = String(date.getDate()).padStart(2, "0");
+        const time = date.toTimeString().slice(0, 5);
+        return `${month}/${day} ${time}`;
       } catch {
         return data.latestTime;
       }
@@ -31,8 +35,8 @@ export function formatStatusLine(data: PollenData, config: Config): string {
     .filter((part): part is string => part !== undefined);
 
   const txt = parts.join(" ");
-  if (config.color !== false) return `${COLORS[lv]}🌸 ${txt}${RESET}`;
-  return `🌸 ${txt}`;
+  if (config.color !== false) return `${COLORS[lv]}${txt}${RESET}`;
+  return txt;
 }
 
 export function printDetail(data: PollenData, config: Config): void {
