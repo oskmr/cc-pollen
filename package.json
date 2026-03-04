@@ -14,12 +14,12 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "https://github.com/YOUR_USERNAME/cc-pollen.git"
+    "url": "https://github.com/oskmr/cc-pollen.git"
   },
   "bugs": {
-    "url": "https://github.com/YOUR_USERNAME/cc-pollen/issues"
+    "url": "https://github.com/oskmr/cc-pollen/issues"
   },
-  "homepage": "https://github.com/YOUR_USERNAME/cc-pollen#readme",
+  "homepage": "https://github.com/oskmr/cc-pollen#readme",
   "type": "module",
   "bin": {
     "cc-pollen": "./dist/cli.js"

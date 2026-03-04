@@ -136,7 +136,7 @@ Weathernews Pollnrobo Open Data API
 
 Contributions are welcome! Please see [CONTRIBUTING.md](CONTRIBUTING.md) for details.
 
-- Report bugs or request features via [GitHub Issues](https://github.com/YOUR_USERNAME/cc-pollen/issues)
+- Report bugs or request features via [GitHub Issues](https://github.com/oskmr/cc-pollen/issues)
 - Submit pull requests for improvements
 - Add new city presets
 - Improve documentation

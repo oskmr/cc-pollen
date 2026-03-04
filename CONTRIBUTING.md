@@ -6,7 +6,7 @@ Thank you for your interest in contributing to cc-pollen!
 
 1. **Clone the repository**
    ```bash
-   git clone https://github.com/YOUR_USERNAME/cc-pollen.git
+   git clone https://github.com/oskmr/cc-pollen.git
    cd cc-pollen
    ```
 
