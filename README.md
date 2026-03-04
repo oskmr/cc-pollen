@@ -9,7 +9,7 @@ Pollen info for Claude Code status line.
 Powered by [Weathernews Pollnrobo Open Data](https://wxtech.weathernews.com/pollen/index.html) — **no API key required**.
 
 ```
-🌸 🟠 ↗ Moderate 新宿区
+03/04 18:00 🟠 ↗ Moderate 新宿区
 ```
 
 ## Install
@@ -58,10 +58,13 @@ Combine tokens with `+`:
 
 | Format | Example |
 |--------|---------|
+| `time+icon+level+city` | 03/04 18:00 🟠 ↗ Moderate 新宿区 |
 | `icon+level+city` | 🟠 ↗ Moderate 新宿区 |
 | `icon+level+city+bar` | 🟠 ↗ Moderate 新宿区 ▓▓░░░ |
 | `icon+level+count` | 🟠 ↗ Moderate 30/cm² |
 | `icon+bar` | 🟠 ▓▓░░░ |
+
+Available tokens: `time` (MM/DD HH:MM), `icon`, `level`, `city`, `bar`, `count`
 
 ## Pollen Levels
 
